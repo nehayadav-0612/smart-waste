@@ -174,6 +174,7 @@ export default function ResidentsPage() {
       } else {
         await createResident({ residentData: formData });
         setSuccess('Resident created successfully');
+        setActiveTab('map');
       }
 
       setFormData({
